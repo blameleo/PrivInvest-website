@@ -175,8 +175,17 @@ footer {
 @media (max-width: 675px) {
 
     .about {
+        width: 100%;
         flex-direction: column-reverse;
         align-items: center;
+        border: solid;
+        padding: 1em;
+    }
+
+    .about-item1 {
+        border: solid;
+        width: 100%;
+        text-align: center;
     }
 
     .list-container {
@@ -195,6 +204,17 @@ footer {
 
     .card1 {
         margin-bottom: 2em;
+        width: 100%;
+        text-align: center;
+        padding: 1.5em;
+    }
+
+    .card2 {
+        margin-bottom: 2em;
+        width: 100%;
+        text-align: center;
+        padding: 1.5em;
+
     }
 
     .pricing-container {
@@ -203,7 +223,28 @@ footer {
     }
 
     .pricing-card {
+        text-align: center;
         width: 80%;
         margin-bottom: 2em;
+    }
+
+    .pricing-card h4 {
+        text-align: center;
+    }
+
+    .pricing-card a {
+        text-align: center;
+
+    }
+
+    .pricing-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        align-items: center;
+    }
+
+    .pricing-list li {
+
     }
 }
