@@ -9,8 +9,8 @@ h2 {
 }
 
 .container{
-    width: 95%;
-    max-width: 900px;
+    width: 97%;
+    max-width: 100%;
     margin: 0 auto;
 }
 .nav-container  img {
@@ -162,11 +162,45 @@ h3 {
     border-radius: 11px;
 }
 
+a {
+    text-decoration: none;
+    color: rgb(255, 145, 0);
+    margin-bottom: 0.3em;
+    font-size: 14px;
+}
 
-
-footer {
+.center {
+    display: flex;
+    justify-content: space-evenly;
     background: #ececec;
     padding: 2em 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+h4 {
+    margin-bottom: 1em;
+}
+
+.subscribe input  {
+    border-radius: 12px;
+    border: 1px solid;
+    padding-right: 50px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.subscribe button {
+    border-radius: 12px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid;
+    margin-left: -70px;
+    background-color: #ffd23f;
+    border: 1px solid;
 }
 
 
@@ -243,8 +277,9 @@ footer {
         align-items: center;
     }
 
-    footer {
-        width: 75%;
-    }
-
+   .center {
+       flex-direction: column;
+       text-align: center;
+        border: solid;
+   }
 }
