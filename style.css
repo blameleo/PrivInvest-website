@@ -55,20 +55,6 @@ h2 {
 
 }
 
-@media (max-width: 675px) {
-    .nav-container{
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .list-container {
-        flex-direction: column;
-        padding: 0;
-        text-align: center;
-        width: 100%;
-    }
-}
 
 
 
@@ -214,8 +200,16 @@ h4 {
     border: 1px solid;
 }
 
+.icon i {
+    display: none;
+}
+
 
 @media (max-width: 675px) {
+
+    .icon i {
+        display: block;
+    }
 
     .about {
         width: 100%;
@@ -234,6 +228,8 @@ h4 {
     h3 {
         text-align: center;
     }
+
+   
 
     .card-container {
         flex-direction: column;
@@ -292,4 +288,39 @@ h4 {
        flex-direction: column;
        text-align: center;
    }
+
+   .nav-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+ 
+
+  .nav-container a.icon {
+    display: block;
+    position: absolute;
+    right: 10px;
+    font-size: 45px;
+    top: 17px;
+  }
+ 
+ .nav-container{
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.list-container {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+  
+}
+
+.show {
+    display: block;
+    transition: 100ms;
 }
